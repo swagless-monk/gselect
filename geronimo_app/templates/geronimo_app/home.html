@@ -109,7 +109,7 @@ canvas {
 }
 h1{
   z-index: 101 !important;
-  color: #484848;
+  color: #ffffff;
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 7px;
@@ -478,16 +478,41 @@ segmentAngleRad = function(Xstart, Ystart, Xtarget, Ytarget, realOrWeb) {
 	<div class="front side">
 		<div class="content">
 		<canvas id="q" style="transform-style: preserve-3d; border-radius: 20px; width:250px; height:190px; position: fixed; margin-left: -125%;margin-top: -118%;"></canvas>
-            <p>STILL CURIOUS?</p>
-			<!--<p>Dedicated to helping you solve your business problems with data driven insights.</p>-->
-		</div>
+        <p>STILL CURIOUS?</p>
+    </div>
 	</div>
 	<div class="back side">
 		<div class="content">
-		<canvas id="g" style="transform-style: preserve-3d; border-radius: 20px; width:250px; height:187px; position: fixed; margin-left: -125%;margin-top: -99%;"></canvas>
-        <p><a style="color:white;" href='https://www.linkedin.com/in/gerrenkeithdavis/'>GERREN</a><br> ^HERE^</p>
-		</div>
-	</div>
+		<canvas id="g" style="transform-style: preserve-3d; border-radius: 20px; width:250px; height:190px; position: fixed; margin-left: -125%;margin-top: -98%;"></canvas>
+        <p>
+            <div class="frame">
+                <button onclick="window.open('https://www.linkedin.com/in/gerrenkeithdavis/','_blank')">
+                    <img src="{% static 'images/charicature.jpeg' %}">
+                </button>
+            </div>
+        </p>
+        <style>
+        .frame {
+            width: 100px;
+            height: 125px;
+            margin-top: -70%;
+            background: #ffffff;
+            outline: 6px solid black;
+            border-radius: 75%;
+            position: fixed;
+            padding: 15px 10px;
+            align-content: center;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 75%;
+            vertical-align: center;
+        }
+        </style>
+    </div>
+</div>
 <style>
 .container-card {
 	width: 200px;
@@ -1776,22 +1801,22 @@ setColors("dark");
             <div class="box">
                 <img src="https://images.credly.com/size/110x110/images/9ba65b84-382b-4968-b93b-e9fb399c0e29/silver_2_small.png" style="max-width:150px; max-height:150px;" class="d-block w-100">
               <br>
-              <button class="btn btn-success" style="outline: none;" target="_blank" onclick="location.href='https://pythoninstitute.org/certification/pcap-certification-associate/pcap-exam-syllabus/';"><b>Learn More</b></button>
+              <button class="btn btn-success" style="outline: none;" target="_blank" onclick="window.open('https://pythoninstitute.org/certification/pcap-certification-associate/pcap-exam-syllabus/','_blank')"><b>Learn More</b></button>
             </div>
             <div class="box">
                 <img src="https://images.credly.com/size/110x110/images/d8017c77-3cc0-4fdf-8e17-62e50632812e/bronze_1_small.png" style="max-width:150px; max-height:150px;" class="d-block w-100">
               <br>
-              <button class="btn btn-success" style="outline: none;" target="_blank" onclick="location.href='https://pythoninstitute.org/certification/pcep-certification-entry-level/pcep-exam-syllabus/';"><b>Learn More</b></button>
+              <button class="btn btn-success" style="outline: none;" target="_blank" onclick="window.open('https://pythoninstitute.org/certification/pcep-certification-entry-level/pcep-exam-syllabus/','_blank')"><b>Learn More</b></button>
             </div> 
             <div class="box">
                 <img src="https://images.credly.com/size/110x110/images/0abdbebb-07bd-4698-8d53-75bc075416df/TDS_png.png" style="max-width:150px; max-height:150px;" class="d-block w-100">
               <br>
-              <button class="btn btn-success" style="outline: none;" target="_blank" onclick="location.href='https://mkt.tableau.com/files/TableauDesktopSpecialist_ExamGuide.pdf';"><b>Learn More</b></button>
+              <button class="btn btn-success" style="outline: none;" target="_blank" onclick="window.open('https://mkt.tableau.com/files/TableauDesktopSpecialist_ExamGuide.pdf', '_blank')"><b>Learn More</b></button>
             </div>
             <div class="box">
                 <img src="https://images.credly.com/size/110x110/images/969ca68c-6793-4ebc-b35a-1d2663ad3c26/cert_mark_SA_badge_large_300px.png" style="max-width:150px; max-height:150px;" class="d-block w-100">
               <br>
-              <button class="btn btn-success" style="outline: none;" target="_blank" onclick="location.href='https://support.scaledagile.com/s/article/Exam-Details-SA-SAFe-Agilist?language=en_US&_ga=2.138295347.2036527389.1650812049-1245583355.1650812049';"><b>Learn More</b></button>
+              <button class="btn btn-success" style="outline: none;" target="_blank" onclick="window.open('https://support.scaledagile.com/s/article/Exam-Details-SA-SAFe-Agilist?language=en_US&_ga=2.138295347.2036527389.1650812049-1245583355.1650812049', '_blank')"><b>Learn More</b></button>
             </div>
         </div>
     </div>
